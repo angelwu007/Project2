@@ -1,0 +1,26 @@
+{{> _errors}}
+
+{{!-- {{#if error}}
+  <div>{{error}}</div>
+{{/if}}
+
+{{#each errors}}
+  <div>{{text}}</div>
+
+{{else}}
+
+{{/each}} --}}
+
+<form action="/users/login" method='Post'>
+
+<label for="email">Email</label>
+<input type="text" id='email' name="email">
+
+<label for="password">Password</label>
+<input type='password' id='email' name="password">
+
+
+
+<button>Log in</button>
+
+</form>

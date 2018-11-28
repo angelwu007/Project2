@@ -1,0 +1,15 @@
+<nav>
+  <li><a href="/">Home</a></li>
+  <li><a href="/">About</a></li>
+
+  {{#if user}}
+  {{!-- when the user is logged in --}}
+    <li><a href="/users/logout">Log out</a></li> 
+  {{!-- add links to photo and albums --}}
+  
+  {{else}}
+  {{!-- when the user is not logged in --}}
+  <li><a href="/users/login">Login</a></li> 
+  <li><a href="/users/register">Register</a></li>
+  {{/if}}
+</nav>
