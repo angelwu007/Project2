@@ -21,7 +21,7 @@ const passport = require('passport')
 
 // mongoose connection
 mongoose
-  .connect('mongodb://localhost/photo-app', {useNewUrlParser: true})
+  .connect(process.env.MONGODB_URI, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -90,10 +90,7 @@ app.use(function(req,res,next){
 require('./config/passport')(passport);
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
-
-
-
+app.locals.title = 'Express - Photo Gallery';
 
 
 // Index route
@@ -107,5 +104,12 @@ app.use('/users',user)
 // add images route...
 const image = require('./routes/images');
 app.use('/image',image)
+
+
+// add comment route...
+const album = require('./routes/albums')
+app.use('/album', album)
+
+
 
 module.exports = app;

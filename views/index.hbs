@@ -1,15 +1,17 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
 
 
-{{!-- 
-============================ --}}
+<header class='header'>
+     <div class='logo-box'>
+        <img src="../public/images/logo.png" alt="logo" class='logo'>
+      </div>
+</header>
 
 <section>
   <h2>Upload your photo</h2>
   <form action="/upload" method="post" enctype="multipart/form-data">
-    <input type="text" name="name">
-    <input type="file" name="photo">
+    <label for="name">Title</label>
+    <input type="text" name="name" id='name'>
+    <input type="file" name="photo" >
     <input type="submit" value="Save">
   </form>
 </section>
@@ -20,5 +22,12 @@
   {{#each pictures}}
     <h3>{{ this.name }}</h3>
     <img src="{{ this.path }}" alt="{{ this.originalName }}" />
+
+    <form action="/comment/add" method='POST'>
+
+    <textarea name="comment" id="" cols="30" rows="3" value='' placeholder='Add a comment'></textarea>
+    <button>Send</button>
+    </form>
+
   {{/each}}
 </section>

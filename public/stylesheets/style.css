@@ -1,8 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
-  padding: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF; }
+
+img {
+  width: 200px; }
+
+.header {
+  height: 110vh;
+  background-image: linear-gradient(to right bottom, #43cea2e5, #185b9de7), url(../images/pexels-photo-991012.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px; }
+
+.logo {
+  height: 30px; }
 
 /*# sourceMappingURL=style.css.map */

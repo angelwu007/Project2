@@ -4,16 +4,22 @@ const Schema = mongoose.Schema;
 
 
 const AlbumSchema = new Schema({
-  author: {type: Schema.Types.ObjectId, ref:'User'},
+  user: {type:String, required: true},
   title: String,
   description: String,
-  images: [{type: Schema.Types.ObjectId, ref: 'Image'}],
+  path: [],
   comments:[{type: Schema.Types.ObjectId, ref: 'Comment'}],
-  restriction: Boolean
+  restriction: String
 
+}, {
+  timestamps: { createdAt: "created_at", updatedAt: "updated_at" }
 })
 
 const Album = mongoose.model('albums',AlbumSchema);
+
+
+
+
 
 module.exports = Album;
 

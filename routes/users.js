@@ -6,7 +6,7 @@ const passport = require('passport')
 
 //importing the user model
 const User = require('../models/User.js');
-
+const Image = require('../models/Image');
 
 // user login route
 router.get('/login',(req,res,next)=>{
@@ -24,7 +24,11 @@ router.post('/login',(req,res,next)=>{
 });
 
 
+// Profile page
 
+router.get('/profile/:id',(req,res,next) =>{
+    res.render('users/profile');
+})
 
 
 
@@ -102,5 +106,8 @@ router.get('/logout',(req,res,next)=>{
   req.flash('success_msg', 'You are logged out');
   res.redirect('/users/login')
 })
+
+
+
 
 module.exports = router;

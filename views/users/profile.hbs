@@ -1,0 +1,30 @@
+<h1>Your profile</h1>
+
+
+
+<h4>{{user.name}}</h4>
+<img src="{{user.avatar}}" alt="">
+
+<p>{{user.bio}}</p>
+<p>{{user.email}}</p>
+{{!-- <h2>{{user.images}}</h2> --}}
+
+
+
+
+
+
+{{!-- const UserSchema = new Schema({
+  
+  name:{type: String, required:true},
+  email:{type: String, required:true},
+  password:{type:String, required: true},
+  avatar:{String , default:''},
+  bio:{type: String},
+  images:[{type: Schema.Types.ObjectId, ref :'Image'}],
+  albums: [{type: Schema.Types.ObjectId, ref :'Album'}],
+  comments: [{type: Schema.Types.ObjectId, ref :'Comment'}]
+},
+{
+  timestamps: true
+}) --}}
