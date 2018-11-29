@@ -5,14 +5,14 @@
      <div class="container"> 
      {{> _navbar}}
      <div class='logo-box'>
-        <img src="../public/images/logo_transparent.png" alt="logo" class='logo'>
+        <img src="images/logo_transparent.png" alt="logo" class='logo'>
       </div>
       <div class='text-box'>
         <h1 class='primary-heading'> 
           <span class='top-heading'>store your most precious memories </span>
           <span class='sub-heading'>sefely and securely </span>
         </h1>
-        <a href="#" class='btn btn-white'> Discover your memory</a>
+        <a href="#register-page-box" class='btn btn-white'> Discover your memory</a>
       </div>
       </div>
   </header>
@@ -20,12 +20,63 @@
 <div class='container'>
 <section class='first-section'>
 
-  <div class='box-1'>pasfasdasdff</div>
-  <div class='box-2'>asdfasfasdf</div>
-  <div class='box-3'>asfasfasfasf</div>
+  <div class='box-1'></div>
+  <div class='box-2'></div>
+  <div class='box-3'></div>
 
 </section>
 </div>
+
+<section class='second-section'>
+
+  <div class="container">
+
+    <i class="fas fa-camera-retro retro"></i>
+    <h2>All your photos are backed up safely, organized and labeled automatically, so you can find them fast, and share them how you like</h2>
+
+  </div>
+
+</section>
+
+
+
+<section class='register-page-box'>
+
+
+<div class='container'>
+
+  <h2>Register for an account</h2>
+
+{{> _errors}}
+<form action="/users/register" method='Post'>
+
+<img src="" alt="" name='avatar'>
+
+
+<label for="name">Name</label>
+<input type='text' id='name' name="name" value='{{name}}' required>
+
+<label for="password">Password</label>
+<input type='password' id='email' name="password" value='{{password}}' required>
+
+<label for="cpassword">Confirm Password</label>
+<input type='password' id='cpassword' name="cpassword" value='{{cpassword}}'>
+
+
+<label for="email">Email</label>
+<input type="email" id='email' name="email" value='{{email}}' required>
+
+<label for="bio">Bio</label>
+<textarea name="bio" id="bio" cols="30" rows="10" value='{{bio}}' placeholder="Share your story to the world"></textarea>
+
+
+<button>Submit</button>
+
+</form>
+
+</div>
+
+</section>
 
 
 {{!-- <section>

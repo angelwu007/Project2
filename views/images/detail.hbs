@@ -1,10 +1,24 @@
-<h1>{{imgDetail.title}}</h1>
+<div class='image-detail'>
 
-<img src="{{imgDetail.path}} " alt="">
+    <div class="container">
 
- <h2>{{imgDetail.originalName}}</h2>
+      <h1>{{imgDetail.title}}</h1>
 
- <h3>{{imgDetail.description}}</h3>
+      <img src="{{imgDetail.path}} " alt="">
+
+      <h4>{{imgDetail.originalName}}</h4>
+
+      <h3>{{imgDetail.description}}</h3>
+
+    <a href="/image/edit/{{imgDetail.id}}">Edit</a>
+
+      <form action="/image/delete/{{imgDetail.id}}" method='POST'>
+          <button>Delete</button>
+      </form>
+
+    </div>
+
+ </div>
 
  {{!-- <h3>{{imgDetail.comments}}</h3> --}}
 

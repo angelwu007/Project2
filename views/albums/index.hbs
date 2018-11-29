@@ -1,15 +1,26 @@
-{{#each album}}
-  <h4>{{this.name}}</h4>
-  <img src="{{this.path}}" alt="">
-  <p>{{this.description}}</p>
-  {{!-- <a href="/album/edit/{{this.id}}">Edit</a> --}}
-  <form action="/album/edit/{{this.id}}" method='GET'>
-      <button>Edit</button>
-  </form>
-  <form action="/album/delete/{{this.id}}" method='POST'>
-      <button>Delete</button>
-  </form>
+<div class='container'>
 
-{{else}}
- <p>No album has been added</p>
-{{/each}}
+    <div class='album-box'>
+            <div>
+                
+                {{#each album}}
+                <h4>{{this.name}}</h4>
+                <img src="{{this.path}}" alt="">
+                <p>{{this.description}}</p>
+                {{!-- <a href="/album/edit/{{this.id}}">Edit</a> --}}
+                <form action="/album/edit/{{this.id}}" method='GET'>
+                    <button>Edit</button>
+                </form>
+                <form action="/album/delete/{{this.id}}" method='POST'>
+                    <button>Delete</button>
+                </form>
+
+                {{else}}
+                <p>No album has been added</p>
+                {{/each}}
+
+            </div>
+
+    </div>
+
+</div>

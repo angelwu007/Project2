@@ -104,7 +104,7 @@ router.post('/register',(req,res,next)=>{
 router.get('/logout',(req,res,next)=>{
   req.logout();
   req.flash('success_msg', 'You are logged out');
-  res.redirect('/users/login')
+  res.redirect('/')
 })
 
 

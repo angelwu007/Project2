@@ -1,15 +1,29 @@
-{{#each imgs}}
-  <h4>{{this.name}}</h4>
-<a href="/image/{{this.id}}"> <img src="{{this.path}}" alt=""></a>
-  <p>{{this.description}}</p>
-  <a href="/image/edit/{{this.id}}">Edit</a>
-  {{!-- <form action="/image/edit/{{id}}" method='GET'>
-      <button>Edit</button>
-  </form> --}}
-  <form action="/image/delete/{{id}}" method='POST'>
-      <button>Delete</button>
-  </form>
+<section class='image-showcase'>
 
-{{else}}
- <p>No photo has been added</p>
-{{/each}}
+
+    <div class='container'>
+
+      <div >
+          <h2>Your Collections</h2>
+          <div class='image-box'>
+          {{#each imgs}}
+         <div class="each-image-box">
+            <h4>{{this.title}}</h4>
+          <a href="/image/{{this.id}}"> <img src="{{this.path}}" alt=""></a>
+            {{!-- <p>{{this.description}}</p> --}}
+            {{!-- <a href="/image/edit/{{this.id}}">Edit</a>
+           
+            <form action="/image/delete/{{id}}" method='POST'>
+                <button>Delete</button>
+            </form> --}}
+           </div>  
+          {{else}}
+          <p>No photo has been added</p>
+          {{/each}}
+          </div>
+       </div>
+
+    </div>
+
+
+</section>

@@ -1,4 +1,4 @@
-<h1>hi</h1>
+{{!-- <h1>hi</h1>
 
 <h1>Edit Album Page</h1>
 
@@ -17,4 +17,38 @@
 
 <button type='submit'>Save</button>
 
-</form>
+</form> --}}
+
+
+<section class='edit-image-page'>
+
+<div class="container">
+
+<h1>Edit Album Page</h1>
+
+
+<img src="{{album.path}}" alt="">
+  
+<form action="/album/edit/{{album._id}}" method="POST" enctype="multipart/form-data">
+
+
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" placeholder="Enter a title" name='title' value='{{album.title}}'>
+      </div>
+
+        <input type="file" class='file-btn' name='path'>
+
+      
+      <div class="form-group">
+        <label for="description">Example textarea</label>
+        <textarea class="form-control" id="description" rows="3" name='description' value="description">{{album.description}}</textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg btn-block" value='save'>Submit</button>
+
+    </form>
+
+  </div>
+
+  </section>

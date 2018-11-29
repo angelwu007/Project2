@@ -7,7 +7,7 @@ const UserSchema = new Schema({
   name:{type: String, required:true},
   email:{type: String, required:true},
   password:{type:String, required: true},
-  avatar:{String , default:''},
+  avatar:String,
   bio:{type: String},
   images:[{type: Schema.Types.ObjectId, ref :'Image'}],
   albums: [{type: Schema.Types.ObjectId, ref :'Album'}],

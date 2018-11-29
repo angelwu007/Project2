@@ -1,5 +1,6 @@
-//adding an album form
+{{!-- //adding an album form --}}
 
+{{!-- <div class='container'>
 <form action="/album/add" method="POST" enctype="multipart/form-data">
 
 <label for="title">Title</label>
@@ -14,3 +15,35 @@
  <input type="submit" value="Save">
 
 </form>
+
+</div> --}}
+
+
+<section class='add-image-page'>
+
+<div class="container">
+
+  <i class="fas fa-camera-retro camera"></i>
+  
+  <form action="/album/add" method="POST" enctype="multipart/form-data">
+
+      <div class="form-group">
+        <label for="title">Album Name</label>
+        <input type="text" class="form-control" id="title" placeholder="Enter a title" name='title'>
+      </div>
+
+        <input type="file" name="photo" class='file-btn'>
+
+      
+      <div class="form-group">
+        <label for="description">Example textarea</label>
+        <textarea class="form-control" id="description" rows="3" name='description'></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg btn-block" value='save'>Submit</button>
+
+    </form>
+
+  </div>
+
+  </section>

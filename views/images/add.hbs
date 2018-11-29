@@ -1,16 +1,61 @@
-//adding an image form
+{{!-- adding an image form --}}
 
-<form action="/image/add" method="POST" enctype="multipart/form-data">
+{{!-- <div class='add-image-page'>
 
-<label for="title">Title</label>
-<input type="text" id='title' name='title'> 
+  <div class='container'>
 
-<input type="file" name="photo" >
+      <form action="/image/add" method="POST" enctype="multipart/form-data">
+
+      <label for="title">Title</label>
+      <input type="text" id='title' name='title'> 
+
+      <input type="file" name="photo" >
+     
+
+      <label for="description">Description</label>
+      <textarea name="description" id="description" cols="30" rows="10"></textarea>
+
+      <input type="submit" value="Save">
+
+      </form>
+
+  </div>
+ 
+
+</div> --}}
 
 
-<label for="description">Description</label>
-<textarea name="description" id="description" cols="30" rows="10"></textarea>
 
- <input type="submit" value="Save">
+<section class='add-image-page'>
 
-</form>
+<div class="container">
+
+  <i class="fas fa-camera-retro camera"></i>
+  
+  <form action="/image/add" method="POST" enctype="multipart/form-data">
+
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" placeholder="Enter a title" name='title'>
+      </div>
+
+        <input type="file" name="photo" class='file-btn'>
+
+      
+      <div class="form-group">
+        <label for="description">Example textarea</label>
+        <textarea class="form-control" id="description" rows="3" name='description'></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg btn-block" value='save'>Submit</button>
+
+    </form>
+
+  </div>
+
+  </section>
+
+
+
+
+

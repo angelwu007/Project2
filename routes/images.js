@@ -55,7 +55,7 @@ router.get('/edit/:id',(req,res,next)=>{
 });
 
 // process edit image form (updating the mongoDB)
-router.post('/edit/:id', uploadCloud.single('path') ,(req, res, next) => {
+router.post('/edit/:id', uploadCloud.single('photo') ,(req, res, next) => {
 
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=',req.body)
 
