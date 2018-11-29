@@ -3,31 +3,103 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  font-size: 10px; }
+
 body {
-  font-size: 16px;
+  font-family: 'Noto Sans SC', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
-a {
-  color: #00B7FF; }
+.container {
+  width: 85%;
+  margin: 0 auto; }
 
 img {
   width: 200px; }
 
 .header {
   height: 110vh;
-  background-image: linear-gradient(to right bottom, #43cea2e5, #185b9de7), url(../images/pexels-photo-991012.jpeg);
+  background-image: linear-gradient(to right bottom, #00c5cc, #7c2ae8);
   background-size: cover;
   background-position: center;
   position: relative; }
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px; }
+  top: 4rem;
+  left: 4rem; }
 
 .logo {
-  height: 30px; }
+  height: 5rem; }
+
+nav li {
+  list-style-type: none;
+  float: right;
+  margin-left: 3rem;
+  padding-top: 3rem; }
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem; }
+
+nav li a:hover {
+  border-bottom: 0.7rem solid #fff; }
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.primary-heading {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 6rem; }
+
+.top-heading {
+  display: block;
+  font-weight: 500;
+  font-size: 3.8rem;
+  line-height: 5.5rem; }
+
+.sub-heading {
+  display: block;
+  font-weight: 400;
+  font-size: 3.7rem;
+  line-height: 5.5rem; }
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.3rem 4rem;
+  display: inline-block;
+  border-radius: 13rem; }
+
+.btn-white {
+  background-color: #fff;
+  color: #777; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-1px); }
+
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+
+.first-section div {
+  width: 30%;
+  height: 30rem;
+  border: 2px solid black;
+  margin-top: 5rem; }
 
 /*# sourceMappingURL=style.css.map */
