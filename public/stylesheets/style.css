@@ -28,7 +28,7 @@ img {
 
 .logo-box {
   position: absolute;
-  top: 4rem;
+  top: 0.5rem;
   left: 4rem; }
 
 nav li {
@@ -141,7 +141,7 @@ nav li a:hover {
   width: 50%;
   color: white;
   position: relative;
-  top: 20rem; }
+  top: 10rem; }
 
 .second-section {
   background-image: linear-gradient(to right bottom, #00c5cccb, #7c2ae8cb), url(../images/pexels-photo-991012.jpeg);
@@ -231,6 +231,7 @@ nav li a:hover {
   border: 1px solid white; }
 
 .album-box {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 /*# sourceMappingURL=style.css.map */

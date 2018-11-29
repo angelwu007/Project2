@@ -39,7 +39,7 @@ img{
 
 .logo-box{
   position: absolute;
-  top:4rem;
+  top:0.5rem;
   left:4rem;
 }
 
@@ -191,7 +191,7 @@ nav li a:hover{
   width:50%;
   color:white;
   position:relative;
-  top: 20rem;
+  top: 10rem;
 }
 
 
@@ -311,5 +311,6 @@ nav li a:hover{
 
 .album-box{
   display:flex;
+  flex-wrap: wrap;
 }
 

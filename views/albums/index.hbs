@@ -1,12 +1,12 @@
 <div class='container'>
 
     <div class='album-box'>
-            <div>
                 
                 {{#each album}}
+            <div>
                 <h4>{{this.name}}</h4>
                 <img src="{{this.path}}" alt="">
-                <p>{{this.description}}</p>
+                {{!-- <p>{{this.description}}</p> --}}
                 {{!-- <a href="/album/edit/{{this.id}}">Edit</a> --}}
                 <form action="/album/edit/{{this.id}}" method='GET'>
                     <button>Edit</button>
@@ -15,11 +15,11 @@
                     <button>Delete</button>
                 </form>
 
+            </div>
                 {{else}}
                 <p>No album has been added</p>
                 {{/each}}
 
-            </div>
 
     </div>
 
