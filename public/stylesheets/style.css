@@ -10,7 +10,8 @@ body {
   font-family: 'Noto Sans SC', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-bottom: 3rem; }
 
 .container {
   width: 85%;
@@ -43,7 +44,7 @@ nav li a {
   font-size: 1.6rem; }
 
 nav li a:hover {
-  border-bottom: 0.7rem solid #fff;
+  border-bottom: 0.5rem solid #fff;
   color: white;
   text-decoration: none;
   font-size: 2rem; }
@@ -105,7 +106,13 @@ nav li a:hover {
   background-image: url(../images/pexels-photo-1143367.jpeg);
   background-size: cover;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  border-radius: 1.5rem; }
+  border-radius: 1.5rem;
+  transition-duration: 1.5s;
+  transition-property: all; }
+
+.first-section div:hover {
+  border-radius: 50%;
+  transform: rotateY(180deg); }
 
 .box-2 {
   width: 30%;
@@ -115,7 +122,8 @@ nav li a:hover {
   background-image: url(../images/pexels-photo-1144695.jpeg);
   background-size: cover;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  border-radius: 1.5rem; }
+  border-radius: 1.5rem;
+  transition-duration: 1.5s; }
 
 .box-3 {
   width: 30%;
@@ -125,7 +133,8 @@ nav li a:hover {
   background-image: url(../images/pexels-photo-1068205.jpeg);
   background-size: cover;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  border-radius: 1.5rem; }
+  border-radius: 1.5rem;
+  transition-duration: 1s,3s; }
 
 .first-section {
   display: flex;
@@ -178,9 +187,10 @@ nav li a:hover {
 
 .profile-page-box {
   line-height: 4rem;
-  background-image: linear-gradient(to right bottom, #48c6ef, #6f86d6);
-  height: 100vh;
-  color: white; }
+  background-image: url(../images/android-wallpaper-beach-bird-s-eye-view-982263.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
 
 .profile-page-box p {
   line-height: 4rem;
@@ -190,26 +200,52 @@ nav li a:hover {
 .profile-page-img img {
   width: 400px; }
 
+.profile-innerbox {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.678);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 30%;
+  margin-top: 4rem; }
+
+.register-page-box .container {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../images/pexels-photo-901944.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.83);
+  width: 78%; }
+
+.register-page-box {
+  margin: 6rem 0; }
+
 .register-page-box label {
   display: block; }
 
 .register-page-box input {
-  width: 50%;
-  border-radius: 7px;
+  width: 35%;
+  height: 2.5rem;
+  border-radius: 1px;
   margin-bottom: 1.5rem;
   border: 1px solid black; }
 
 .register-page-box textarea {
-  width: 50%;
+  width: 35%;
   border-radius: 1px;
   display: block;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  padding: 1rem; }
 
 .register-page-box button {
   padding: 1.5rem;
-  width: 50%;
-  background-color: #7c2ae8cb;
-  color: white; }
+  width: 17.5%;
+  border-radius: 13rem;
+  font-size: 1.5rem;
+  background-color: #00c5ccea;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 .image-showcase {
   padding-top: 5rem; }
@@ -217,6 +253,10 @@ nav li a:hover {
 .image-showcase img {
   width: 100rem;
   border: 1px solid white; }
+
+.image-showcase h2 {
+  text-align: center;
+  font-size: 5rem; }
 
 .image-box {
   display: flex;
@@ -233,5 +273,30 @@ nav li a:hover {
 .album-box {
   display: flex;
   flex-wrap: wrap; }
+
+.album-page {
+  background-image: linear-gradient(to right, #cc2b5e, #753a88);
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding: 5rem 0; }
+
+.vd-section {
+  position: relative; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  margin-top: 5rem; }
+  .bg-video_content {
+    height: 80%;
+    width: 100%;
+    object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */
